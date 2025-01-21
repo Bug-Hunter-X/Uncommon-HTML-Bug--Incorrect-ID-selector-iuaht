@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Uncommon HTML Bug</title>
+</head>
+<body>
+  <div id="myDiv">
+    This text should be visible.
+  </div>
+
+  <script>
+    //Incorrect way to target an element with an ID that starts with a number
+    document.getElementById(1myDiv).innerHTML = "This text will replace the previous content."; 
+  </script>
+</body>
+</html>
